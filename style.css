@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('https://wallpaperaccess.com/full/3861599.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin: 4rem 0 4rem 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.panel {
+    background-size: auto cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 1rem;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.mercury {
+    background-image:url('https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.venus {
+    background-image: url('https://cdn.mos.cms.futurecdn.net/RifjtkFLBEFgzkZqWEh69P.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.earth {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Blue_Marble_%28remastered%29.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mars {
+    background-image: url('https://cdn.mos.cms.futurecdn.net/L868HCTDT8ueAXXrcyXoWc.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jupiter {
+    background-image: url('https://cdn.mos.cms.futurecdn.net/yyonzpUYYkQNX8corCxeyD.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.saturn {
+    background-image: url('https://solarsystem.nasa.gov/system/stellar_items/image_files/38_saturn_1600x900.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.uranus {
+    background-image: url('https://www.the-sun.com/wp-content/uploads/sites/6/2022/05/lv-comp-nasa-mission-to-uranus-look-like-off-platform.jpg?strip=all&quality=100&w=1422&h=800&crop=1');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.neptune {
+    background-image: url('https://media.wired.com/photos/5d04045bde1abfe4e801d054/125:94/w_1595,h_1200,c_limit/Science-Neptune-FA-PIA01492_orig.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 768px) {
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5),
+    .panel:nth-of-type(6),
+    .panel:nth-of-type(7),
+    .panel:nth-of-type(8) {
+        display: none;
+    }
+}
